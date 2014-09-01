@@ -1,0 +1,7 @@
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\bin\Debug\Dominio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\bin\Debug\Dominio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Debug\Dominio.Recursos.Textos.resources
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Debug\Dominio.csproj.GenerateResource.Cache
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Debug\Dominio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Debug\Dominio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache

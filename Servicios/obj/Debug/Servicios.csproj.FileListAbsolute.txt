@@ -1,0 +1,16 @@
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\AutoMapper.Net4.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Servicios.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Servicios.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\AutoMapper.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Dominio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Ninject.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Repositorio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\EntityFramework.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Dominio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Repositorio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\AutoMapper.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\Ninject.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Debug\EntityFramework.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\obj\Debug\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\obj\Debug\Servicios.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\obj\Debug\Servicios.pdb
