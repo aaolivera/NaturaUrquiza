@@ -1,0 +1,95 @@
+﻿@using NaturaUrquiza.Helpers
+@model Dominio.Dto.ProductoDto
+@{
+    ViewBag.Title = "_CrearModificar";
+}
+
+<style>
+    .form-group {
+        margin-bottom: 5px;
+    }
+</style> 
+<script type="text/javascript">
+    $.validator.methods.number = function(value, element) {
+        value = floatValue(value);
+        return this.optional(element) || !isNaN(value);
+    };
+    $.validator.methods.range = function(value, element, param) {
+        value = floatValue(value);
+        return this.optional(element) || (value >= param[0] && value <= param[1]);
+    };
+ 
+    function floatValue(value) {
+        return parseFloat(value.replace(",", "."));
+    }
+
+</script>
+
+@Html.ValidationSummary(true)
+<div class="form-group">
+    @Html.LabelFor(model => model.Nombre, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.TextBoxFor(model => model.Nombre, new {@class = "form-control", @data_url = @Url.Action("Upload","Upload")})
+        @Html.ValidationMessageFor(model => model.Nombre)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Descripcion, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.TextAreaFor(model => model.Descripcion, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.Descripcion)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.DescripcionCorta, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.TextBoxFor(model => model.DescripcionCorta, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.DescripcionCorta)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Precio, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.TextBoxFor(model => model.Precio, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.Precio)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.PrecioPromocional, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.TextBoxFor(model => model.PrecioPromocional, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.PrecioPromocional)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Puntos, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.TextBoxFor(model => model.Puntos, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.Puntos)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Categoria, new {@class = "control-label col-sm-4"})
+    <div class="col-sm-6">
+        @Html.EnumDropDownListFor(model => model.Categoria, new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.Categoria)
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.FotoPath, new { @class = "control-label col-sm-4" })
+    @Html.HiddenFor(model => model.FotoPath)
+
+
+    <div class="col-sm-6">
+        @if (Model != null && !String.IsNullOrEmpty(Model.FotoPath))
+        {
+            <h5>Imagen Actual: <small>@Html.DisplayFor(model => model.FotoPath)</small></h5>
+        }
+        <div id="fileimput">
+            <input type="file" id="fileupload" name="fileupload" accept="image/*" style="width: 100%;">
+        </div>
+        <div class="well hide" id="filelistholder">
+        </div>
+    </div>
+
+</div>
