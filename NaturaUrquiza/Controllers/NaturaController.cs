@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Web.Mvc;
 using Dominio.Consultas;
 using Servicios;
 
@@ -27,6 +30,22 @@ namespace NaturaUrquiza.Controllers
         public ActionResult Ver(int id)
         {
             return View(_servicio.ObtenerProducto(id));
+        }
+
+        [HttpPost]
+        public ActionResult Upload()
+        {
+            // Get a reference to the file that our jQuery sent.  Even with multiple files, they will all be their own request and be the 0 index
+            var file = Request.Files[0];
+
+            // do something with the file in this space 
+            var pic = Path.GetFileName(file.FileName.Replace(' ', '-'));
+            var path = Path.Combine(Server.MapPath("~/images/profile"), pic);
+            // file is uploaded
+            file.SaveAs(path);
+
+            // end of file doinge
+            return Json(new {HttpStatusCode.OK});
         }
 
     }

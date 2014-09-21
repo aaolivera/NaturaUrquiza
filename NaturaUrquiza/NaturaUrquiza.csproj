@@ -15,7 +15,7 @@
     <AssemblyName>NaturaUrquiza</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -201,7 +201,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="AjaxEditSuccessResult.cs" />
     <Compile Include="Controllers\AdministracionController.cs" />
-    <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\NaturaController.cs" />
     <Compile Include="Global.asax.cs">
@@ -307,6 +306,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\administracion.modificar.js" />
     <Content Include="Scripts\administracion.crear.js" />
+    <Content Include="Scripts\naturaUrquiza.js" />
     <Content Include="Scripts\customcommon.js" />
     <Content Include="Scripts\customcommon.validate.js" />
     <Content Include="Scripts\html5shiv.js" />
@@ -339,6 +339,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\knockout-3.2.0.debug.js" />
+    <Content Include="Scripts\knockout-3.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -367,6 +369,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Filters\" />
     <Folder Include="Models\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -407,10 +410,10 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
+          <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>56968</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51069/</IISUrl>
+          <IISUrl>http://localhost:8081/NaturaUrquiza</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -41,6 +41,7 @@ namespace Dominio.Dto
         public Categoria Categoria { get; set; }
 
         [Display(ResourceType = typeof(Textos), Name = "Foto")]
+        [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
         public string FotoPath { get; set; }
     }
 }

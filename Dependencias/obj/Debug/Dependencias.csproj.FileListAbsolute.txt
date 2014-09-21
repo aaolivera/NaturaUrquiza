@@ -21,3 +21,26 @@ C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Debug\Dependencias.csprojResolveAssemblyReference.cache
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Debug\Dependencias.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Debug\Dependencias.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\AutoMapper.Net4.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Dependencias.dll.config
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Dependencias.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Dependencias.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Dominio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\EntityFramework.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Ninject.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Ninject.Web.Common.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Servicios.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\AutoMapper.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Dominio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Repositorio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Servicios.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\EntityFramework.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Ninject.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\Ninject.Web.Common.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Debug\AutoMapper.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\obj\Debug\Dependencias.csprojResolveAssemblyReference.cache
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\obj\Debug\Dependencias.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\obj\Debug\Dependencias.pdb

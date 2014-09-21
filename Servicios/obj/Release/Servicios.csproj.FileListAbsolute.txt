@@ -1,0 +1,16 @@
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\AutoMapper.Net4.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Servicios.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Servicios.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\AutoMapper.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Dominio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Ninject.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\EntityFramework.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Dominio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Repositorio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\AutoMapper.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\Ninject.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\EntityFramework.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\obj\Release\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\obj\Release\Servicios.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\obj\Release\Servicios.pdb

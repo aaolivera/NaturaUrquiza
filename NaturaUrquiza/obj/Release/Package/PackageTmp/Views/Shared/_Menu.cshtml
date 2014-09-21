@@ -1,0 +1,30 @@
+﻿<div id="fb-root"></div>
+<section class="featured">
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title"><a href="@Url.Action("Index", "Natura")"><img src="~/Content/images/logo.png" alt="Natura"></a></p>
+        </div>
+        <div class="float-right">
+            <div class="caja-redes">
+               <a href="#"><i class="icon-twitter"></i><span></span></a>
+               <a href="#"><i class="icon-facebook"></i><span></span></a>
+               <a href="#"><i class="icon-google-plus"></i><span></span></a>
+            </div>
+        </div>
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+            <h2>@ViewBag.Message</h2>
+        </hgroup>
+    </div>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-right">
+                <nav>
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Natura")</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+</section>

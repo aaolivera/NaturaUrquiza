@@ -1,0 +1,12 @@
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\Repositorio.dll.config
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\Repositorio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\Dominio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\EntityFramework.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\Dominio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\EntityFramework.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\obj\Release\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\obj\Release\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\obj\Release\Repositorio.pdb

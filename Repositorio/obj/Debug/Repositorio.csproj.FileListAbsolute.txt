@@ -24,3 +24,15 @@ C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Repositorio\bin\D
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Repositorio\obj\Debug\Repositorio.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\Repositorio.dll.config
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\Dominio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\Dominio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Repositorio\obj\Debug\Repositorio.pdb
