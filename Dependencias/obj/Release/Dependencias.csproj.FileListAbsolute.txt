@@ -21,3 +21,26 @@ C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\obj\Release\Dependencias.csprojResolveAssemblyReference.cache
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\obj\Release\Dependencias.dll
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\obj\Release\Dependencias.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.Net4.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Dependencias.dll.config
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Dependencias.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Dependencias.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Dominio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\EntityFramework.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Ninject.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Ninject.Web.Common.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Repositorio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Servicios.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Dominio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Repositorio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Servicios.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\EntityFramework.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Ninject.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\Ninject.Web.Common.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.csprojResolveAssemblyReference.cache
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.pdb

@@ -1,0 +1,10 @@
+﻿@using Dominio.Consultas
+@using Dominio.Dto
+@using NaturaUrquiza.Helpers
+@{
+    Layout = null;
+    var items = (ListaPaginada<ProductoDto>)ViewBag.Productos;
+}
+
+
+@Html.IconContainer(items)

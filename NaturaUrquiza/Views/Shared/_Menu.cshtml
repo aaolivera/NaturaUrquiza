@@ -5,11 +5,22 @@
             <p class="site-title"><a href="@Url.Action("Index", "Natura")"><img src="~/Content/images/logo.png" alt="Natura"></a></p>
         </div>
         <div class="float-right">
-            <div class="caja-redes">
-               <a href="#"><i class="icon-twitter"></i><span></span></a>
-               <a href="#"><i class="icon-facebook"></i><span></span></a>
-               <a href="#"><i class="icon-google-plus"></i><span></span></a>
-            </div>
+            <ul class="caja-redes nav nav-pills">
+                <li class="dropdown" id ="ComprasDropDown" >
+                   <a href="#" id="ComprasDropDownButton" class="dropdown-toggle" data-toggle="dropdown" style="padding: 4px 8px 4px 4px; margin-right: 30px"><i class="glyphicon glyphicon-shopping-cart"></i><span class="jewelCount" data-bind="text: Productos().length, visible: Productos().length > 0"></span></a>
+                     <ul class="dropdown-menu" id ="ComprasList" data-bind="foreach: Productos" >
+                        <li><a class="quitarProducto">×</a>
+                            <div class="producto-body">
+                                <div class="producto-linea" data-bind="text: Nombre"></div>
+                                <div class="producto-linea" data-bind="text: PrecioVisible"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" style="padding: 4px"><i class="icon-twitter"></i><span></span></a></li>
+                <li><a href="#" style="padding: 4px"><i class="icon-facebook"></i><span></span></a></li>
+                <li><a href="#" style="padding: 4px"><i class="icon-google-plus"></i><span></span></a></li>
+            </ul>
         </div>
         <hgroup class="title">
             <h1>@ViewBag.Title.</h1>

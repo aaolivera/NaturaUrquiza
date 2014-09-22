@@ -10,14 +10,12 @@
 <style>
     th {
     font-size: 1em;
-}
+    }
 </style> 
 @Html.Grilla(items,
     grilla => grilla.Columns(
     grilla.ColumnaEliminarModificar(Html, "Administracion"),
     grilla.Columna("Nombre", Textos.Nombre),
-    //grilla.Columna("Descripcion", Textos.Descripcion),
-    //grilla.Columna("DescripcionCorta", Textos.DescripcionCorta),
     grilla.Columna("Precio", Textos.Precio),
     grilla.Columna("PrecioPromocional", Textos.PrecioPromocional),
     grilla.Columna("Puntos", Textos.Puntos),

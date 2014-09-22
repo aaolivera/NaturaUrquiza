@@ -14,3 +14,19 @@ C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\bin\Release\EntityFramewor
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\obj\Release\Servicios.csprojResolveAssemblyReference.cache
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\obj\Release\Servicios.dll
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Servicios\obj\Release\Servicios.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\AutoMapper.Net4.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Servicios.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Servicios.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\AutoMapper.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Dominio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Ninject.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Repositorio.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\EntityFramework.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Dominio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Repositorio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\AutoMapper.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\Ninject.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\bin\Release\EntityFramework.xml
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\obj\Release\Servicios.csprojResolveAssemblyReference.cache
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\obj\Release\Servicios.dll
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Servicios\obj\Release\Servicios.pdb

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="NaturaUrquizaDb-Web.config Connection String" description="NaturaUrquizaDb Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:ynlpxbyypb.database.windows.net,1433;Database=NaturaUrquizaDb;User ID=aolivera@ynlpxbyypb;Password=martes-12;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\ale\\Documents\\GitHub\\NaturaUrquiza\\NaturaUrquiza\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NaturaUrquizaDb']/@connectionString" />
-  </parameter>
-</parameters>

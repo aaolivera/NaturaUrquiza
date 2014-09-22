@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Mvc;
 using Dominio.Consultas;
+using Microsoft.Web.Mvc;
 using Servicios;
 
 namespace NaturaUrquiza.Controllers
@@ -19,6 +20,14 @@ namespace NaturaUrquiza.Controllers
         {
             ListQuery(filtro, pagina, ordenarPor, dirOrden);
             return View();
+        }
+
+        [AjaxOnly]
+        [ActionName("Index")]
+        public ActionResult Listar(string filtro = "", int pagina = 1, string ordenarPor = "Id", DirOrden dirOrden = DirOrden.Asc)
+        {
+            ListQuery(filtro, pagina, ordenarPor, dirOrden);
+            return View("Listar", (object)filtro);
         }
 
         private void ListQuery(string filtro, int pagina, string ordenarPor, DirOrden dirOrden)

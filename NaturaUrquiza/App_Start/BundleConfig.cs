@@ -13,7 +13,9 @@ namespace NaturaUrquiza.App_Start
                         "~/Scripts/jquery-ui-i18n.js",
                         "~/Scripts/jquery.unobtrusive-ajax.js",
                         "~/Scripts/jquery.validate.js",
-                        "~/Scripts/jquery-migrate-1.2.1.js"));
+                        "~/Scripts/jquery-migrate-1.2.1.js"
+                        ,"~/Scripts/jquery.cookie.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*",
