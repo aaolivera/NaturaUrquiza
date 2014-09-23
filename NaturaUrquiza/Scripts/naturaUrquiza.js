@@ -31,7 +31,6 @@ function ProductosListViewModel() {
     // Inicializo observers
     var self = this;
     self.Productos = ko.observableArray([]);
-    self.CantidadSeleccionados = ko.observable(0);
     self.Refrescar = ko.observable();
     
     // Obtengo objetos Descuento del dominio
@@ -59,16 +58,34 @@ function ProductosListViewModel() {
         $.cookie("productos", ko.toJSON(self.Productos));
     };
     
-    self.cantidadDeProducto = function (data) {
-        var match = ko.utils.arrayFirst(self.Productos(), function (item) {
-            return item.Id === data;
-        });
-        return match.Cantidad();
+    self.quitarProducto = function (value) {
+        var match = self.Productos.remove(value);
+        if (match.length > 0) {
+            value.Cantidad(0);
+            value._destroy = true;
+            $.cookie("productos", ko.toJSON(self.Productos));
+        }
     };
+    
+    self.cantidadDeProducto = ko.computed(function () {
+        var total = 0;
+        ko.utils.arrayForEach(self.Productos(), function (feature) {
+            total += feature.Cantidad();
+        });
+        return total;
+    });
 
     self.refrescarFunc = function() {
         self.Refrescar.notifySubscribers();
     };
+
+    $("#ComprasDropDownButton").on("click", function() {
+        if (self.Productos().length > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    });
 }
 
 $(document).ready(function () {
@@ -89,5 +106,13 @@ $(document).ready(function () {
             modelProductos.refrescarFunc();
         });
         return false;
+    });
+
+    $(".ComprasList").on("click", function () {
+        return false;
+    });
+    
+    $('#ComprasList').click(function (e) {
+        e.stopPropagation();
     });
 });
