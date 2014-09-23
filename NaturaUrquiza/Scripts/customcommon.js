@@ -14,7 +14,7 @@ $(document).ready(function () {
             $("#alerta").delay(500).addClass("in");
     }
     attachDataPickers();
-    $(document).on('click', '#grid thead th a, #grid tfoot td a, #icongridFoot ul li a', function (evt) {
+    $(document).on('click', '#grid thead th a, #grid tfoot td a', function (evt) {
         var container = $(this).parents('#gridContainer');
         if (container.attr('data-grid-url')) {
             container.data().gridUrl = this.href;
@@ -205,5 +205,3 @@ function CentrarPosicionElemento() {
         top: ($(window).height() - $('.centro-pantalla').outerHeight()) / 3
     });
 }
-
-

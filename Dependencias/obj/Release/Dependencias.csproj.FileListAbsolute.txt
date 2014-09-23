@@ -1,4 +1,3 @@
-C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.Net4.dll
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\Dependencias.dll.config
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\Dependencias.dll
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\Dependencias.pdb
@@ -44,3 +43,4 @@ C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.csprojResolveAssemblyReference.cache
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.Net4.dll
