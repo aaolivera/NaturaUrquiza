@@ -733,9 +733,9 @@ tr.pager td {
     color: #fff;
     font-size: 13px;
     font-weight: bold;
-    position: absolute;
+    position: relative;
     /*right: 3px;*/
-    top: -4px;
+    top: -9px;
     z-index: 101;
     background-color: #f03d25;
     padding: 0 1px;
@@ -767,6 +767,7 @@ tr.pager td {
 .producto-body {
     margin-right: 15px;
     cursor: default;
+    /*background-color:#a4d4e6*/
 }
 
 .producto-linea {

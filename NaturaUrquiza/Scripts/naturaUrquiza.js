@@ -27,12 +27,28 @@ function Producto(id, nombre, precio, precioPromocional, refrescar, cantidad) {
     });
 }
 
+function Total(productos, refrescar) {
+    //id trae el objeto que ya existia
+    var selff = this;
+    selff.Nombre = "Total: ";
+    selff.Productos = productos;
+    selff.Refrescar = refrescar;
+    selff.PrecioVisible = ko.computed(function () {
+        selff.Refrescar();
+        var total = 0;
+        ko.utils.arrayForEach(selff.Productos(), function (producto) {
+            total += parseFloat(producto.Precio) * producto.Cantidad();
+        });
+        return "$" + total;
+    });
+}
+
 function ProductosListViewModel() {
     // Inicializo observers
     var self = this;
     self.Productos = ko.observableArray([]);
     self.Refrescar = ko.observable();
-    
+    self.Total = new Total(self.Productos, self.Refrescar);
     // Obtengo objetos Descuento del dominio
     var productos = $.cookie("productos");
     if (productos != null) {
