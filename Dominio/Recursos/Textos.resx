@@ -129,6 +129,9 @@
   <data name="Categoria" xml:space="preserve">
     <value>Categoría</value>
   </data>
+  <data name="Comprar" xml:space="preserve">
+    <value>Comprar</value>
+  </data>
   <data name="Confirmacion" xml:space="preserve">
     <value>Confirmación</value>
   </data>

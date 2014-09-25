@@ -131,4 +131,10 @@ $(document).ready(function () {
     $('#ComprasList').click(function (e) {
         e.stopPropagation();
     });
+
+    $("#boton-comprar").on('click', function() {
+        $('#dialogo-comprar').modal().css({
+            'top': '5%',
+        });;
+    });
 });

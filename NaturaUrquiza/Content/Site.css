@@ -774,3 +774,14 @@ tr.pager td {
     font-size: 12px;
     text-align: left;
 }
+
+.filaProductos:hover {
+    background-color:#f4f6f9;
+    border-color:#e3e8f0;
+    text-decoration:none
+}
+.row:hover {
+    background-color:#f4f6f9;
+    border-color:#e3e8f0;
+    text-decoration:none
+}

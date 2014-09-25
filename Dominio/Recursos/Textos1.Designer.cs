@@ -97,6 +97,15 @@ namespace Dominio.Recursos {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comprar.
+        /// </summary>
+        public static string Comprar {
+            get {
+                return ResourceManager.GetString("Comprar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirmación.
         /// </summary>
         public static string Confirmacion {

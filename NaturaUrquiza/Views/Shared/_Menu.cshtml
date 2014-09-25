@@ -11,7 +11,7 @@
                     <ul class="dropdown-menu" id ="ComprasList" style='min-width: 240px;' >
                         <li>
                             <ul data-bind="foreach: Productos">
-                                <li><a class="quitarProducto" data-bind="click: $root.quitarProducto">×</a>
+                                <li class="filaProductos"><a class="quitarProducto" data-bind="click: $root.quitarProducto">×</a>
                                     <div class="producto-body">
                                         <strong class="producto-linea" data-bind="text: Nombre"></strong>
                                         <div class="producto-linea" style="margin-left: 10px" data-bind="text: PrecioVisible"></div>
@@ -23,7 +23,7 @@
                             <div class="producto-body">
                                 <strong class="producto-linea" style="margin-left: 10px" data-bind="text: Total.Nombre"></strong>
                                 <span class="producto-linea" data-bind="text: Total.PrecioVisible"></span>
-                                <a class="btn btn-default btn-xs pull-right">Comprar</a>
+                                <a class="btn btn-default btn-xs pull-right" id="boton-comprar" >Comprar</a>
                             </div>
                         </li>
                     </ul>

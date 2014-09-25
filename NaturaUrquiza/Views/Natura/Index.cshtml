@@ -22,3 +22,47 @@
 <div id="gridContainer">
     @Html.Partial("Listar")
 </div>
+<div class="modal fade " id="dialogo-comprar">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="dialogo-comprar-title">Carrito de Compras</h4>
+            </div>
+            <div class="modal-body" id="dialogo-editar-body">
+                <div data-bind="foreach: Productos">
+                    <a class="quitarProducto" data-bind="click: $root.quitarProducto">×</a>
+                    <div class="row">
+                        <div class="col-md-6"><strong class="producto-linea" data-bind="text: Nombre"></strong></div>
+                        <div class="col-md-4"><span class="producto-linea" style="margin-left: 10px" data-bind="text: PrecioVisible"></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-4">
+                        <strong class="producto-linea" style="margin-left: 10px" data-bind="text: Total.Nombre"></strong>
+                        <span class="producto-linea" data-bind="    text: Total.PrecioVisible"></span>
+                    </div>
+                </div>
+                @*<div class="form-group">
+                    @Html.LabelFor(model => model.Descripcion, new { @class = "control-label col-sm-4" })
+                    <div class="col-sm-6">
+                        @Html.TextAreaFor(model => model.Descripcion, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Descripcion)
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DescripcionCorta, new { @class = "control-label col-sm-4" })
+                    <div class="col-sm-6">
+                        @Html.TextBoxFor(model => model.DescripcionCorta, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.DescripcionCorta)
+                    </div>
+                </div>*@
+            </div>
+            <div class="modal-footer">
+                <input id="dialogo-comprar-comprar" type="button" class="btn btn-primary" value="@Textos.Comprar"/>
+                <input id="dialogo-comprar-cancelar" type="button" class="btn" data-dismiss="modal" value="@Textos.Cancelar"/>
+            </div>
+        </div>
+    </div>
+</div>
