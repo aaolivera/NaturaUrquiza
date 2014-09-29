@@ -785,3 +785,8 @@ tr.pager td {
     border-color:#e3e8f0;
     text-decoration:none
 }
+
+.help-block {
+    color: #e80c4d!important;
+    font-size: 12px;
+}

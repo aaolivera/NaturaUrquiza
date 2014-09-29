@@ -6,35 +6,44 @@
 }
 @Scripts.Render("~/bundles/jqueryval")
 
-@using (Ajax.BeginForm("Comprar", "Natura", new AjaxOptions(), new {@class = "form-horizontal search-form", data_dialogo_titulo = Textos.Producto_Crear, enctype = "multipart/form-data"}))
-                {
+@using (Ajax.BeginForm("Comprar", "Natura", new AjaxOptions(), new { @class = "form-horizontal search-form", data_dialogo_titulo = Textos.Producto_Crear, enctype = "multipart/form-data" }))
+{
+    <div>
+        <div class="row">
+            <div class="col-md-4 text-right"><strong class="producto-linea">Producto</strong></div>
+            <div class="col-md-4"><span class="producto-linea" style="margin-left: 10px">Precio</span></div>
+        </div>
+    </div>
+
     <div data-bind="foreach: Productos">
-        <a class="quitarProducto" data-bind="click: $root.quitarProducto">×</a>
+        <a class="quitarProducto">×</a>
         <div class="row rowSombreada">
-            <div class="col-md-6"><strong class="producto-linea" data-bind="text: Nombre"></strong></div>
+            <div class="col-md-4 text-right"><strong class="producto-linea" data-bind="text: Nombre"></strong></div>
             <div class="col-md-4"><span class="producto-linea" style="margin-left: 10px" data-bind="text: PrecioVisible"></span></div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6"></div>
+        <div class="col-md-4"></div>
         <div class="col-md-4">
             <strong class="producto-linea" style="margin-left: 10px" data-bind="text: Total.Nombre"></strong>
             <span class="producto-linea" data-bind="    text: Total.PrecioVisible"></span>
         </div>
     </div>
-    @Html.HiddenFor(model => model.Productos, new {@data_bind = "value: ko.toJSON($root.Productos())"})
+    <br/>
+    
+    @Html.HiddenFor(model => model.Productos, new { @data_bind = "value: ko.toJSON($root.Productos())" })
     <div class="form-group">
-        @Html.LabelFor(model => model.Mail, new {@class = "control-label col-sm-4"})
+        @Html.LabelFor(model => model.Mail, new { @class = "control-label col-sm-4 input-sm" })
         <div class="col-sm-6">
-            @Html.TextBoxFor(model => model.Mail, new {@class = "form-control"})
+            @Html.TextBoxFor(model => model.Mail, new { @class = "form-control input-sm" })
             @Html.ValidationMessageFor(model => model.Mail)
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.Telefono, new {@class = "control-label col-sm-4"})
+        @Html.LabelFor(model => model.Telefono, new { @class = "control-label col-sm-4 input-sm" })
         <div class="col-sm-6">
-            @Html.TextBoxFor(model => model.Telefono, new {@class = "form-control"})
+            @Html.TextBoxFor(model => model.Telefono, new { @class = "form-control input-sm" })
             @Html.ValidationMessageFor(model => model.Telefono)
         </div>
     </div>
-                }
+}

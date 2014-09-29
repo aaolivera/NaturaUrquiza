@@ -11,7 +11,7 @@
 <script type="text/javascript" src="@Url.Content("~/scripts/administracion.crear.js")"></script>
 @Html.Hidden("urlUpdate",Url.Action("Upload","Natura"))
 
-@using (Ajax.BeginForm("Crear", "Administracion", new AjaxOptions(), new { @class = "form-horizontal search-form", data_dialogo_titulo = Textos.Producto_Crear, enctype = "multipart/form-data" }))
+@using (Ajax.BeginForm("Crear", "Administracion", new AjaxOptions(), new { @class = "form-horizontal", data_dialogo_titulo = Textos.Producto_Crear, enctype = "multipart/form-data" }))
 {
     @Html.Partial("_CrearModificar", Model)
 }

@@ -43,4 +43,3 @@ C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\obj\Release\Dependencias.pdb
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.Net4.dll
-C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dependencias\bin\Release\AutoMapper.Net4.dll
