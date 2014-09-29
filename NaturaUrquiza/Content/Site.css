@@ -775,12 +775,12 @@ tr.pager td {
     text-align: left;
 }
 
-.filaProductos:hover {
+.filaProducto:hover {
     background-color:#f4f6f9;
     border-color:#e3e8f0;
     text-decoration:none
 }
-.row:hover {
+.rowSombreada:hover {
     background-color:#f4f6f9;
     border-color:#e3e8f0;
     text-decoration:none

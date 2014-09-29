@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Dominio.Enum;
 using Dominio.Recursos;
 
 namespace Dominio.Dto
@@ -36,9 +35,21 @@ namespace Dominio.Dto
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
         public int Puntos { get; set; }
 
-        [Display(ResourceType = typeof(Textos), Name = "Categoria")]
+        [Display(ResourceType = typeof(Textos), Name = "Linea")]
+        public string Linea { get; set; }
+
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
-        public Categoria Categoria { get; set; }
+        public int LineaId { get; set; }
+
+        [Display(ResourceType = typeof(Textos), Name = "Tipo")]
+        public string Tipo { get; set; }
+
+        [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
+        public int TipoId { get; set; }
+
+        [Display(ResourceType = typeof(Textos), Name = "Prioridad")]
+        [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
+        public int Prioridad { get; set; }
 
         [Display(ResourceType = typeof(Textos), Name = "Foto")]
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]

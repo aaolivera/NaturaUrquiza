@@ -11,7 +11,7 @@
 @Scripts.Render("~/bundles/jqueryval")
 <script type="text/javascript" src="@Url.Content("~/scripts/administracion.modificar.js")"></script>
 @Html.Hidden("urlUpdate",Url.Action("Upload","Natura"))
-@using (Ajax.BeginForm("Modificar", "Administracion", new AjaxOptions(), new { @class = "form-horizontal", data_dialogo_titulo = Textos.Producto_Modificar, enctype = "multipart/form-data" }))
+@using (Ajax.BeginForm("Modificar", "Administracion", new AjaxOptions(), new { @class = "form-horizontal search-form", data_dialogo_titulo = Textos.Producto_Modificar, enctype = "multipart/form-data" }))
 {
     @Html.Partial("_CrearModificar", Model)
 }

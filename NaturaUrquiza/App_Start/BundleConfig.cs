@@ -18,7 +18,7 @@ namespace NaturaUrquiza.App_Start
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*",
+                "~/Scripts/jquery.validate.unobtrusive.js",
                         "~/Scripts/customcommon.validate.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(

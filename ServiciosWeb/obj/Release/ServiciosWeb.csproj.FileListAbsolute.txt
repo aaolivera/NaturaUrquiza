@@ -32,3 +32,37 @@ C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\ServiciosWeb\bin\
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\ServiciosWeb\obj\Release\ServiciosWeb.csprojResolveAssemblyReference.cache
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\ServiciosWeb\obj\Release\ServiciosWeb.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\ServiciosWeb\obj\Release\ServiciosWeb.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\AutoMapper.Net4.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\ServiciosWeb.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\ServiciosWeb.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Dependencias.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Dominio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\EntityFramework.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\log4net.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Extensions.Logging.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Extensions.Logging.Log4Net.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Extensions.Wcf.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Web.Common.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Repositorio.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Servicios.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\WebActivator.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\AutoMapper.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Dependencias.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Dominio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Repositorio.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Servicios.pdb
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\EntityFramework.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\log4net.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Extensions.Logging.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Extensions.Logging.Log4Net.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Extensions.Wcf.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\Ninject.Web.Common.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\bin\AutoMapper.xml
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\obj\Release\ServiciosWeb.csprojResolveAssemblyReference.cache
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\obj\Release\ServiciosWeb.dll
+C:\Users\ale\Documents\GitHub\NaturaUrquiza\ServiciosWeb\obj\Release\ServiciosWeb.pdb

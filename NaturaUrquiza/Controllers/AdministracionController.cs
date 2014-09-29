@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Globalization;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web;
@@ -46,6 +47,7 @@ namespace NaturaUrquiza.Controllers
 
         public ActionResult Crear()
         {
+            SetearVista();
             return View();
         }
 
@@ -54,7 +56,6 @@ namespace NaturaUrquiza.Controllers
         {
             if (ModelState.IsValid)
             {
-                
                 var resultado = servicioComandos.Ejecutar(new CrearProducto { Dto = model });
                 if (!resultado.HayErrores)
                 {
@@ -62,14 +63,14 @@ namespace NaturaUrquiza.Controllers
                 }
                 ModelState.AgregarErrores(resultado);
             }
-
+            SetearVista();
             return View(model);
         }
 
         public ActionResult Modificar(int id)
         {
             var choferAModificar = servicio.ObtenerProducto(id);
-
+            SetearVista();
             return View(choferAModificar);
         }
 
@@ -85,6 +86,7 @@ namespace NaturaUrquiza.Controllers
                 }
                 ModelState.AgregarErrores(resultado);
             }
+            SetearVista();
             return View(model);
         }
 
@@ -93,6 +95,12 @@ namespace NaturaUrquiza.Controllers
         {
             var resultado = servicioComandos.Ejecutar(new EliminarProducto { Id = id });
             return Content(!resultado.HayErrores ? "true" : resultado.Errores.Values.First());
+        }
+
+        private void SetearVista()
+        {                                           
+            ViewBag.Lineas = servicio.ListarLineas().OrderBy(x => x.Nombre).ToSelectList(x => x.Id.ToString(CultureInfo.InvariantCulture),x=> x.Nombre);
+            ViewBag.Tipos = servicio.ListarTipos().OrderBy(x => x.Nombre).ToSelectList(x => x.Id.ToString(CultureInfo.InvariantCulture), x => x.Nombre);
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using System.Net;
-using System.Net.Http;
 using System.Web.Mvc;
 using Dominio.Consultas;
+using Dominio.Dto;
 using Microsoft.Web.Mvc;
 using Servicios;
 
@@ -16,7 +16,7 @@ namespace NaturaUrquiza.Controllers
             _servicio = servcio;
         }
 
-        public ActionResult Index(string filtro = "", int pagina = 1, string ordenarPor = "Id", DirOrden dirOrden = DirOrden.Asc)
+        public ActionResult Index(string filtro = "", int pagina = 1, string ordenarPor = "Prioridad", DirOrden dirOrden = DirOrden.Asc)
         {
             ListQuery(filtro, pagina, ordenarPor, dirOrden);
             return View();
@@ -24,7 +24,7 @@ namespace NaturaUrquiza.Controllers
 
         [AjaxOnly]
         [ActionName("Index")]
-        public ActionResult Listar(string filtro = "", int pagina = 1, string ordenarPor = "Id", DirOrden dirOrden = DirOrden.Asc)
+        public ActionResult Listar(string filtro = "", int pagina = 1, string ordenarPor = "Prioridad", DirOrden dirOrden = DirOrden.Asc)
         {
             ListQuery(filtro, pagina, ordenarPor, dirOrden);
             return View("Listar", (object)filtro);
@@ -55,6 +55,16 @@ namespace NaturaUrquiza.Controllers
 
             // end of file doinge
             return Json(new {HttpStatusCode.OK});
+        }
+
+        [HttpPost]
+        public ActionResult Comprar(CompraDto dto)
+        {
+            if (ModelState.IsValid)
+            {
+                return new AjaxEditSuccessResult();
+            }
+            return View("Comprar");
         }
 
     }

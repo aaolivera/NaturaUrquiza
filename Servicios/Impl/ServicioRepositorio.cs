@@ -41,6 +41,29 @@ namespace Servicios.Impl
             return Obtener<Producto, ProductoDto>(id);
         }
 
+
+        public List<LineaDto> ListarLineas()
+        {
+            return Listar<Linea, LineaDto>().ToList();
+        }
+
+        public List<TipoDto> ListarTipos()
+        {
+            return Listar<Tipo, TipoDto>().ToList();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
         private ListaPaginada<TDto> Listar<TEntidad, TDto>(Expression<Func<TEntidad, bool>> expresionFiltro, Paginacion paginacion) where TEntidad : class
         {
             return conversor.ConvertirListaPaginada<TEntidad, TDto>(repositorio.Listar(expresionFiltro, paginacion));

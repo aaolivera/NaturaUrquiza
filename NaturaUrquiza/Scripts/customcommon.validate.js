@@ -10,12 +10,12 @@ $(document).ready(function () {
 
     /*Agrego clase error si hay errores lado cliente*/
     $('form').submit(function () {
-        $(this).find('div.control-group').each(function () {
+        $(this).find('div.form-group').each(function () {
             if ($(this).find('span.field-validation-error').length == 0) {
                 $(this).removeClass('error');
             }
         });
-        $(this).find('div.control-group').each(function () {
+        $(this).find('div.form-group').each(function () {
             if ($(this).find('span.field-validation-error').length > 0) {
                 $(this).addClass('error');
             }
@@ -23,12 +23,12 @@ $(document).ready(function () {
     });
     
     /*Agrego clase error si hay errores lado servidor*/
-    $(this).find('div.control-group').each(function () {
+    $(this).find('div.form-group').each(function () {
         if ($(this).find('span.field-validation-error').length == 0) {
             $(this).removeClass('error');
         }
     });
-    $(this).find('div.control-group').each(function () {
+    $(this).find('div.form-group').each(function () {
         if ($(this).find('span.field-validation-error').length > 0) {
             $(this).addClass('error');
         }
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     /*Vierifico si los errores siguen persistiendo*/
     $('input, textarea, select').change(function () {
-        var controlGroup = $(this).closest("div.control-group");
+        var controlGroup = $(this).closest("div.form-group");
         if (controlGroup.find('span.field-validation-error').length == 0)
             controlGroup.removeClass('error');
         else 
@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
     
     $('input, textarea').keyup(function () {
-        var controlGroup = $(this).closest("div.control-group");
+        var controlGroup = $(this).closest("div.form-group");
         if (controlGroup.find('span.field-validation-error').length == 0)
             controlGroup.removeClass('error');
         else 
@@ -52,7 +52,7 @@ $(document).ready(function () {
     });
     
     $('input, textarea, select').blur(function () {
-        var controlGroup = $(this).closest("div.control-group"); 
+        var controlGroup = $(this).closest("div.form-group"); 
         if (controlGroup.find('span.field-validation-error').length == 0)
             controlGroup.removeClass('error');
         else
@@ -70,7 +70,7 @@ $(document).ready(function () {
 
 function ValidarObjeto(formulario, elemento) {
     formulario.validate().element(elemento);
-    var controlGroup = elemento.closest("div.control-group");
+    var controlGroup = elemento.closest("div.form-group");
     if (controlGroup.find('span.field-validation-error').length == 0)
         controlGroup.removeClass('error');
     else

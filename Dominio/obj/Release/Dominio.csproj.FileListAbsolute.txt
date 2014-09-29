@@ -1,6 +1,5 @@
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\bin\Release\Dominio.dll
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\bin\Release\Dominio.pdb
-C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\obj\Release\Dominio.csprojResolveAssemblyReference.cache
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\obj\Release\Dominio.Recursos.Textos.resources
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\obj\Release\Dominio.csproj.GenerateResource.Cache
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\obj\Release\Dominio.dll

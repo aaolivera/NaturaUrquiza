@@ -14,6 +14,15 @@ namespace Servicios.Procesamiento
 
         protected override Producto CrearEntidad(CrearProducto comando)
         {
+            var entidad = Conversor.Convertir<ProductoDto, Producto>(comando.Dto);
+            if (comando.Dto.LineaId != 0)
+            {
+                entidad.Linea = Repositorio.Obtener<Linea>(comando.Dto.LineaId);
+            }
+            if (comando.Dto.TipoId != 0)
+            {
+                entidad.Tipo = Repositorio.Obtener<Tipo>(comando.Dto.TipoId);
+            }
             return Conversor.Convertir<ProductoDto, Producto>(comando.Dto);
         }
 

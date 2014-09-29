@@ -19,5 +19,11 @@ namespace Servicios
 
         [OperationContract]
         ProductoDto ObtenerProducto(int id);
+
+        [OperationContract]
+        List<LineaDto> ListarLineas();
+
+        [OperationContract]
+        List<TipoDto> ListarTipos();
     }
 }

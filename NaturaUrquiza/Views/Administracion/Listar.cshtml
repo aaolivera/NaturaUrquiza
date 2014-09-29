@@ -15,10 +15,11 @@
 @Html.Grilla(items,
     grilla => grilla.Columns(
     grilla.ColumnaEliminarModificar(Html, "Administracion"),
+    grilla.Columna("Puntos", Textos.Puntos),
     grilla.Columna("Nombre", Textos.Nombre),
     grilla.Columna("Precio", Textos.Precio),
     grilla.Columna("PrecioPromocional", Textos.PrecioPromocional),
-    grilla.Columna("Puntos", Textos.Puntos),
-    grilla.Columna("Categoria", Textos.Categoria)
+    grilla.Columna("Linea.Nombre", Textos.Linea, x => x.Linea),
+    grilla.Columna("Tipo.Nombre", Textos.Tipo, x => x.Tipo)
     ))
 

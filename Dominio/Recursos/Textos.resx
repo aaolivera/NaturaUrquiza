@@ -180,6 +180,12 @@
   <data name="Guardar" xml:space="preserve">
     <value>Guardar</value>
   </data>
+  <data name="Linea" xml:space="preserve">
+    <value>Linea</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
   <data name="Menu_Mensaje" xml:space="preserve">
     <value>Datos de Romi</value>
   </data>
@@ -207,6 +213,9 @@
   <data name="PrecioPromocional" xml:space="preserve">
     <value>Precio Promocional</value>
   </data>
+  <data name="Prioridad" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
   <data name="Producto_Crear" xml:space="preserve">
     <value>Crear Producto</value>
   </data>
@@ -221,5 +230,11 @@
   </data>
   <data name="Si" xml:space="preserve">
     <value>Si</value>
+  </data>
+  <data name="Telefono" xml:space="preserve">
+    <value>Telefono</value>
+  </data>
+  <data name="Tipo" xml:space="preserve">
+    <value>Tipo</value>
   </data>
 </root>

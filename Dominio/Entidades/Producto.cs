@@ -13,7 +13,9 @@ namespace Dominio.Entidades
         public virtual decimal Precio { get; set; }
         public virtual decimal? PrecioPromocional { get; set; }
         public virtual int Puntos { get; set; }
-        public virtual Categoria Categoria { get; set; }
+        public virtual Tipo Tipo { get; set; }
+        public virtual Linea Linea { get; set; }
+        public virtual int Prioridad { get; set; }
         public virtual string FotoPath { get; set; }
     }
 }
