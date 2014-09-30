@@ -10,17 +10,19 @@
                    <a href="#" id="ComprasDropDownButton" class="dropdown-toggle" data-toggle="dropdown" style="padding: 4px 8px 4px 4px; margin-right: 30px" ><i class="glyphicon glyphicon-shopping-cart"></i><span class="jewelCount" data-bind="text: cantidadDeProducto, visible: Productos().length > 0"></span></a>
                     <ul class="dropdown-menu" id ="ComprasList" style='min-width: 240px;' >
                         <li>
-                            <ul data-bind="foreach: Productos">
-                                <li class="filaProducto"><a class="quitarProducto" data-bind="click: $root.quitarProducto">×</a>
+                            <ul data-bind="foreach: Productos" style="padding-left: 2px">
+                                <li class="filaProducto">
+                                    <a class="quitarProducto" data-bind="click: $root.quitarProducto">×</a>
                                     <div class="producto-body">
-                                        <strong class="producto-linea" data-bind="text: Nombre"></strong>
-                                        <div class="producto-linea" style="margin-left: 10px" data-bind="text: PrecioVisible"></div>
+                                        <img class='img-rounded imagenCompra' data-bind="attr: { src: UrlImage }" alt='Imagen genérica para marcar el lugar' style='width: 60px; height: 60px;'>
+                                        <p><strong class="producto-linea" data-bind="text: Nombre"></strong></p>
+                                        <p class="producto-linea" style="margin-left: 10px" data-bind="text: PrecioVisible"></p>
                                     </div>
                                 </li>
                             </ul>
                         </li>
                         <li style="background-color:#a4d4e6; margin-top: 6px;padding-top: 4px;padding-bottom: 5px;">
-                            <div class="producto-body">
+                            <div class="">
                                 <strong class="producto-linea" style="margin-left: 10px" data-bind="text: Total.Nombre"></strong>
                                 <span class="producto-linea" data-bind="text: Total.PrecioVisible"></span>
                                 <a class="btn btn-default btn-xs pull-right" id="boton-comprar" >Comprar</a>

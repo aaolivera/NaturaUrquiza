@@ -771,10 +771,13 @@ tr.pager td {
 }
 
 .producto-linea {
-    font-size: 12px;
+    font-size: 12px!important;
     text-align: left;
 }
-
+.filaProducto {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
 .filaProducto:hover {
     background-color:#f4f6f9;
     border-color:#e3e8f0;
@@ -789,4 +792,24 @@ tr.pager td {
 .help-block {
     color: #e80c4d!important;
     font-size: 12px;
+}
+
+.producto-body {
+display: block;
+min-height: 60px;
+height: auto!important;
+height: 60px;
+padding: 9px 30px 9px 84px;
+position: relative;
+}
+
+.imagenCompra {
+position: absolute;
+left: 10px;
+top: 0;
+width: 60px;
+}
+
+ul {
+list-style: none;
 }

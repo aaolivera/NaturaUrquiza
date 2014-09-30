@@ -9,23 +9,23 @@
 @using (Ajax.BeginForm("Comprar", "Natura", new AjaxOptions(), new { @class = "form-horizontal search-form", data_dialogo_titulo = Textos.Producto_Crear, enctype = "multipart/form-data" }))
 {
     <div>
-        <div class="row">
-            <div class="col-md-4 text-right"><strong class="producto-linea">Producto</strong></div>
-            <div class="col-md-4"><span class="producto-linea" style="margin-left: 10px">Precio</span></div>
+        <div>
+            <div class="control-label col-sm-4" style="padding-top: 0"><strong class="producto-linea">Producto</strong></div>
+            <div class="col-sm-6"><span class="producto-linea">Precio</span></div>
         </div>
     </div>
 
     <div data-bind="foreach: Productos">
-        <a class="quitarProducto">×</a>
-        <div class="row rowSombreada">
-            <div class="col-md-4 text-right"><strong class="producto-linea" data-bind="text: Nombre"></strong></div>
-            <div class="col-md-4"><span class="producto-linea" style="margin-left: 10px" data-bind="text: PrecioVisible"></span></div>
+        <div class="rowSombreada">
+            <div class="control-label col-sm-4" style="padding-top: 0"><strong class="producto-linea" data-bind="text: Nombre"></strong></div>
+            <div class="col-md-6" ><span class="producto-linea" data-bind="text: PrecioVisible"></span></div>
+            <a class="quitarProducto" style="width: 0; float: left">×</a>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4"></div>
+        <div class="col-md-4" style="width: 38.9%;"></div>
         <div class="col-md-4">
-            <strong class="producto-linea" style="margin-left: 10px" data-bind="text: Total.Nombre"></strong>
+            <strong class="producto-linea" data-bind="text: Total.Nombre"></strong>
             <span class="producto-linea" data-bind="    text: Total.PrecioVisible"></span>
         </div>
     </div>
