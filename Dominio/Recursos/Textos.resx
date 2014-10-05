@@ -162,6 +162,9 @@
   <data name="Error_Requerido" xml:space="preserve">
     <value>El Campo '{0}' es requerido</value>
   </data>
+  <data name="Error_SoloEmail" xml:space="preserve">
+    <value>Escriba una dirección de correo electrónico con el formato alguien@example.com</value>
+  </data>
   <data name="Error_SoloNumerico" xml:space="preserve">
     <value>El Campo '{0}' debe ser numérico</value>
   </data>

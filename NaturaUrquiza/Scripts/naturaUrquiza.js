@@ -10,9 +10,9 @@ function Producto(id, nombre, precio, precioPromocional, urlImage, refrescar, ca
         selff.Cantidad = ko.observable(1);
     }
 
-    selff.Precio = precio;
+    selff.Precio = parseFloat(precio);
     if (precioPromocional != null) {
-        selff.Precio = precioPromocional;
+        selff.Precio = parseFloat(precioPromocional);
     }
     selff.Refrescar = refrescar;
     selff.PrecioVisible = ko.computed(function () {
@@ -136,5 +136,6 @@ $(document).ready(function () {
         $('#dialogo-comprar').modal().css({
             'top': '5%',
         });;
+        $("#dialogo-comprar-comprar").attr("disabled", false);
     });
 });

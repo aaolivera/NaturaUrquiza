@@ -54,5 +54,7 @@ namespace Dominio.Dto
         [Display(ResourceType = typeof(Textos), Name = "Foto")]
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
         public string FotoPath { get; set; }
+
+        public string PrecioVisible { get; set; }
     }
 }

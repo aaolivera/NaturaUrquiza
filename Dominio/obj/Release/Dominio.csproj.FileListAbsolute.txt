@@ -6,8 +6,8 @@ C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\obj\Release\Dominio.dll
 C:\Users\ale\Documents\GitHub\NaturaUrquiza\Dominio\obj\Release\Dominio.pdb
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\bin\Release\Dominio.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\bin\Release\Dominio.pdb
-C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Release\Dominio.csprojResolveAssemblyReference.cache
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Release\Dominio.Recursos.Textos.resources
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Release\Dominio.csproj.GenerateResource.Cache
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Release\Dominio.dll
 C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Release\Dominio.pdb
+C:\Users\A\Documents\Visual Studio 2012\Projects\NaturaUrquiza\Dominio\obj\Release\Dominio.csprojResolveAssemblyReference.cache

@@ -24,5 +24,6 @@ function cargarDialogocomprar(data) {
     $('#dialogo-comprar').modal().css({
         'top': '5%',
     });;
+    $("#dialogo-comprar-comprar").attr("disabled", false);
 }
 
