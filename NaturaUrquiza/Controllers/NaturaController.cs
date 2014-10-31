@@ -84,14 +84,14 @@ namespace NaturaUrquiza.Controllers
             var fromAddress = new MailAddress("romina.c.lozano@gmail.com", "Romina");
             var to = new MailAddress("aa.olivera09@gmail.com", "ale");
             const string fromPassword = "alejandro7";
-            var subject = "Compra " + dto.Nombre + " " + DateTime.Now.Date;
+            var subject = "Compra " + dto.Nombre + " " + DateTime.Now.ToShortDateString();
             var body = String.Format(
-@"Nombre:   {0}
-Mail:   {1}
-Telefono:   {2}
-Productos: 
-    {3}", dto.Nombre, dto.Mail, dto.Telefono, productos.Select(x => x.Nombre + "      " + x.PrecioVisible).Aggregate((current, next) => current + @"
-    " + next));
+@"<div><b>Nombre:</b>   {0}</div>
+<div><b>Telefono:</b>   {1}</div>
+<div><b>Mail:</b>   {2}</div>
+<div><b>Productos:</b></div> 
+<div style='padding-left:5em'>{3}</div>
+<div><b>Total: </b>${4}</div>", dto.Nombre, dto.Telefono, dto.Mail, productos.Select(x => "<div><b>" + x.Codigo + "-" + x.Nombre + "</b></div><div style='padding-left:2em'>" + x.PrecioVisible + "</div>").Aggregate((current, next) => current + next), productos.Sum(x => x.PrecioPromocional.HasValue ? x.PrecioPromocional : x.Precio));
 
             EnviarMAil(fromAddress, fromPassword, to, subject, body);
         }
@@ -105,14 +105,16 @@ Productos:
             var fromAddress = new MailAddress("romina.c.lozano@gmail.com", "Romina");
             var to = new MailAddress(dto.Mail, dto.Nombre);
             const string fromPassword = "alejandro7";
-            var subject = "Compra " + dto.Nombre + " " + DateTime.Now.Date;
+            var subject = "Confirmación de compra " + DateTime.Now.ToShortDateString();
             var body = String.Format(
-@"Nombre:   {0}
-Mail:   {1}
-Telefono:   {2}
-Productos: 
-    {3}", dto.Nombre, dto.Mail, dto.Telefono, productos.Select(x => x.Nombre + "      " + x.PrecioVisible).Aggregate((current, next) => current + @"
-    " + next));
+@"<div><b>Estimada/o {0},</b></div>
+<div><b>Has seleccionado los productos:</b></div> 
+<div style='padding-left:5em'>{1}</div>
+<div style='padding-left:5em'><b>Total: </b>${2}</div>
+<br/><br/>
+<div>En breve nos pondremos en contacto con usted para confirmar la venta.
+Cualquier duda y/o consulta, no dude en comunicarse conmigo al telefono: 15-XXXX-XXXX.
+Desde ya, muchas gracias por elegirnos.</div>", dto.Nombre, productos.Select(x => "<div><b>" + x.Nombre + "</b></div><div style='padding-left:2em'>" + x.PrecioVisible + "</div>").Aggregate((current, next) => current + next), productos.Sum(x => x.PrecioPromocional.HasValue ? x.PrecioPromocional : x.Precio));
 
             EnviarMAil(fromAddress, fromPassword, to, subject, body);
         }
@@ -131,7 +133,8 @@ Productos:
             using (var message = new MailMessage(fromAddress, to)
                 {
                     Subject = subject,
-                    Body = body
+                    Body = body,
+                    IsBodyHtml = true
                 })
             {
                 smtp.Send(message);

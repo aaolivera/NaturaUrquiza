@@ -33,6 +33,7 @@ namespace Dominio.Dto
 
         [Display(ResourceType = typeof(Textos), Name = "Puntos")]
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
+        [RegularExpression(@"^[0-9]*$", ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_SoloNumerico")]
         public int Puntos { get; set; }
 
         [Display(ResourceType = typeof(Textos), Name = "Linea")]
@@ -49,11 +50,16 @@ namespace Dominio.Dto
 
         [Display(ResourceType = typeof(Textos), Name = "Prioridad")]
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
+        [RegularExpression(@"^[0-9]*$", ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_SoloNumerico")]
         public int Prioridad { get; set; }
 
         [Display(ResourceType = typeof(Textos), Name = "Foto")]
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
         public string FotoPath { get; set; }
+
+        [Display(ResourceType = typeof(Textos), Name = "Codigo")]
+        [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
+        public string Codigo { get; set; }
 
         public string PrecioVisible { get; set; }
     }

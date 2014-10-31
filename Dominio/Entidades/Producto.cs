@@ -17,5 +17,6 @@ namespace Dominio.Entidades
         public virtual Linea Linea { get; set; }
         public virtual int Prioridad { get; set; }
         public virtual string FotoPath { get; set; }
+        public virtual string Codigo { get; set; }
     }
 }

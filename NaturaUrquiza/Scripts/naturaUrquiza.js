@@ -1,8 +1,9 @@
-function Producto(id, nombre, precio, precioPromocional, urlImage, refrescar, cantidad) {
+function Producto(id, nombre, precio, precioPromocional, urlImage, refrescar, codigo, cantidad) {
     //id trae el objeto que ya existia
     var selff = this;
     selff.Id = id;
     selff.Nombre = nombre;
+    selff.Codigo = codigo;
     selff.UrlImage = urlImage;
     if (cantidad != null) {
         selff.Cantidad = ko.observable(cantidad);
@@ -54,22 +55,23 @@ function ProductosListViewModel() {
     if (productos != null) {
         var mappedDescuentos = $.map(JSON.parse(productos),
             function(item) {
-                return new Producto(item.Id, item.Nombre, item.Precio, null, item.UrlImage, self.Refrescar, item.Cantidad);
+                return new Producto(item.Id, item.Nombre, item.Precio, null, item.UrlImage, self.Refrescar, item.Codigo, item.Cantidad);
             });
         self.Productos(mappedDescuentos);
     }
 
     // Operations
-    self.agregarProducto = function (id, nombre, precio, precioPromocional, urlImage) {
+    self.agregarProducto = function (id, nombre, precio, precioPromocional, urlImage, codigo) {
         
         var match = ko.utils.arrayFirst(self.Productos(), function (item) {
             return id === item.Id;
         });
 
         if (!match) {
-            self.Productos.push(new Producto(id, nombre, precio, precioPromocional, urlImage, self.Refrescar));
+            self.Productos.push(new Producto(id, nombre, precio, precioPromocional, urlImage, self.Refrescar, codigo));
         } else {
-            match.Cantidad(match.Cantidad() + 1);
+            var a = match.Cantidad();
+            match.Cantidad(a + 1);
         }
         $.cookie("productos", ko.toJSON(self.Productos));
     };

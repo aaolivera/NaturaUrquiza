@@ -220,6 +220,7 @@
     <Compile Include="NavigationRoutes\NavigationRouteConfigurationExtensions.cs" />
     <Compile Include="NavigationRoutes\NavigationRouteFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\comprar.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\body.css" />

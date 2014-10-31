@@ -129,6 +129,9 @@
   <data name="Categoria" xml:space="preserve">
     <value>Categoría</value>
   </data>
+  <data name="Codigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
   <data name="Comprar" xml:space="preserve">
     <value>Comprar</value>
   </data>
@@ -142,7 +145,7 @@
     <value>Descripción</value>
   </data>
   <data name="DescripcionCorta" xml:space="preserve">
-    <value>Descripcion Corta</value>
+    <value>Descripción Corta</value>
   </data>
   <data name="Ejecutar" xml:space="preserve">
     <value>Ejecutar</value>
