@@ -91,7 +91,7 @@ namespace NaturaUrquiza.Controllers
 <div><b>Mail:</b>   {2}</div>
 <div><b>Productos:</b></div> 
 <div style='padding-left:5em'>{3}</div>
-<div><b>Total: </b>${4}</div>", dto.Nombre, dto.Telefono, dto.Mail, productos.Select(x => "<div><b>" + x.Codigo + "-" + x.Nombre + "</b></div><div style='padding-left:2em'>" + x.PrecioVisible + "</div>").Aggregate((current, next) => current + next), productos.Sum(x => x.PrecioPromocional.HasValue ? x.PrecioPromocional : x.Precio));
+<div><b>Total: </b>${4}</div>", dto.Nombre, dto.Telefono, dto.Mail, productos.Select(x => "<div><b>" + x.Codigo + " - " + x.Nombre + "</b></div><div style='padding-left:2em'>" + x.PrecioVisible + "</div>").Aggregate((current, next) => current + next), productos.Sum(x => x.PrecioPromocional.HasValue ? x.PrecioPromocional : x.Precio));
 
             EnviarMAil(fromAddress, fromPassword, to, subject, body);
         }
@@ -107,11 +107,11 @@ namespace NaturaUrquiza.Controllers
             const string fromPassword = "alejandro7";
             var subject = "Confirmación de compra " + DateTime.Now.ToShortDateString();
             var body = String.Format(
-@"<div><b>Estimada/o {0},</b></div>
-<div><b>Has seleccionado los productos:</b></div> 
+@"<div>Estimada/o {0},</div>
+<div>Has seleccionado los productos:</div> 
 <div style='padding-left:5em'>{1}</div>
-<div style='padding-left:5em'><b>Total: </b>${2}</div>
-<br/><br/>
+<div style='padding-left:7em'><b>Total: </b>${2}</div>
+<br/>
 <div>En breve nos pondremos en contacto con usted para confirmar la venta.
 Cualquier duda y/o consulta, no dude en comunicarse conmigo al telefono: 15-XXXX-XXXX.
 Desde ya, muchas gracias por elegirnos.</div>", dto.Nombre, productos.Select(x => "<div><b>" + x.Nombre + "</b></div><div style='padding-left:2em'>" + x.PrecioVisible + "</div>").Aggregate((current, next) => current + next), productos.Sum(x => x.PrecioPromocional.HasValue ? x.PrecioPromocional : x.Precio));

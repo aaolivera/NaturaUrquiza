@@ -18,7 +18,9 @@ namespace Repositorio
             //Database.SetInitializer(new CreateDatabaseIfNotExists<DbContexto>());
 
             // Eliminar y Crear nuevamente la base de datos al 
-            // detectar cambios en el modelo.
+            // detectar cambios en el modelo. 
+            Configuration.ProxyCreationEnabled = true;
+            Configuration.LazyLoadingEnabled = true;
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DbContexto>());
         }
 
@@ -29,8 +31,7 @@ namespace Repositorio
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();   
 
             //Se mapean todas las entidades bajo el namespace Dominio.Entidades      
-            MapearAssemblyDe<Usuario>(modelBuilder, x => x.Namespace == typeof(Usuario).Namespace, 
-                excluir: null);
+            MapearAssemblyDe<Usuario>(modelBuilder, x => x.Namespace == typeof(Usuario).Namespace, excluir: null);
         }
 
         private void MapearAssemblyDe<TEntidad>(DbModelBuilder modelBuilder, Predicate<Type> incluir, Predicate<Type> excluir)

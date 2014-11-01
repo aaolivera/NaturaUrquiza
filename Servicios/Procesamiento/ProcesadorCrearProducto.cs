@@ -23,7 +23,7 @@ namespace Servicios.Procesamiento
             {
                 entidad.Tipo = Repositorio.Obtener<Tipo>(comando.Dto.TipoId);
             }
-            return Conversor.Convertir<ProductoDto, Producto>(comando.Dto);
+            return entidad;
         }
 
         protected override void Validar(CrearProducto comando, Resultado resultado)
