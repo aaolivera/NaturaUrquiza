@@ -241,6 +241,6 @@
     <value>Telefono</value>
   </data>
   <data name="Tipo" xml:space="preserve">
-    <value>Tipo</value>
+    <value>TipoProducto</value>
   </data>
 </root>

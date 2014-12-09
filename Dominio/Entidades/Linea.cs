@@ -8,5 +8,6 @@ namespace Dominio.Entidades
         [Key]
         public virtual int Id { get; set; }
         public virtual string Nombre { get; set; }
+        public virtual TipoLinea TipoLinea { get; set; }
     }
 }

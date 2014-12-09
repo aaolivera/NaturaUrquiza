@@ -4,16 +4,16 @@ using Dominio.Entidades;
 
 namespace Servicios.Conversiones.Impl.Perfiles
 {
-    public class TipoMappingProfile : Profile
+    public class TipoLineaMappingProfile : Profile
     {
         public override string ProfileName
         {
-            get { return "TipoMappingProfile"; }
+            get { return "TipoLineaMappingProfile"; }
         }
         protected override void Configure()
         {
-            Mapper.CreateMap<Tipo, TipoDto>();
-            Mapper.CreateMap<TipoDto, Tipo>();
+            Mapper.CreateMap<TipoLinea, TipoLineaDto>();
+            Mapper.CreateMap<TipoLineaDto, TipoLinea>();
         }
     }
 }

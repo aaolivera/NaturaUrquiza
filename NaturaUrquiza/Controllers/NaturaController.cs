@@ -22,24 +22,24 @@ namespace NaturaUrquiza.Controllers
             _servicio = servcio;
         }
 
-        public ActionResult Index(string filtro = "", int pagina = 1, string ordenarPor = "Prioridad", DirOrden dirOrden = DirOrden.Asc)
+        public ActionResult Index(string filtro = "",int lineaId = 0, int pagina = 1, string ordenarPor = "Prioridad", DirOrden dirOrden = DirOrden.Asc)
         {
-            ListQuery(filtro, pagina, ordenarPor, dirOrden);
+            ListQuery(filtro, lineaId, pagina, ordenarPor, dirOrden);
             return View();
         }
 
         [AjaxOnly]
         [ActionName("Index")]
-        public ActionResult Listar(string filtro = "", int pagina = 1, string ordenarPor = "Prioridad", DirOrden dirOrden = DirOrden.Asc)
+        public ActionResult Listar(string filtro = "", int lineaId = 0, int pagina = 1, string ordenarPor = "Prioridad", DirOrden dirOrden = DirOrden.Asc)
         {
-            ListQuery(filtro, pagina, ordenarPor, dirOrden);
+            ListQuery(filtro, lineaId, pagina, ordenarPor, dirOrden);
             return View("Listar", (object)filtro);
         }
 
-        private void ListQuery(string filtro, int pagina, string ordenarPor, DirOrden dirOrden)
+        private void ListQuery(string filtro, int lineaId, int pagina, string ordenarPor, DirOrden dirOrden)
         {
             var paginacion = new Paginacion(ordenarPor, dirOrden, pagina, 9);
-            ViewBag.Productos = _servicio.ListarProductos(filtro, paginacion);
+            ViewBag.Productos = _servicio.ListarProductos(filtro, lineaId,paginacion);
         }
 
         public ActionResult Ver(int id)

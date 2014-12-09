@@ -19,9 +19,9 @@ namespace Servicios.Procesamiento
             {
                 entidad.Linea = Repositorio.Obtener<Linea>(comando.Dto.LineaId);
             }
-            if (comando.Dto.TipoId != 0)
+            if (comando.Dto.TipoProductoId != 0)
             {
-                entidad.Tipo = Repositorio.Obtener<Tipo>(comando.Dto.TipoId);
+                entidad.TipoProducto = Repositorio.Obtener<TipoProducto>(comando.Dto.TipoProductoId);
             }
             return entidad;
         }

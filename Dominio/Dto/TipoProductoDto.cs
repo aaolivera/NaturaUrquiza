@@ -4,7 +4,7 @@ using Dominio.Recursos;
 
 namespace Dominio.Dto
 {
-    public sealed class TipoDto
+    public sealed class TipoProductoDto
     {
         public int Id { get; set; }
 

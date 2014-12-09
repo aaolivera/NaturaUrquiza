@@ -51,7 +51,8 @@
   <ItemGroup>
     <Compile Include="Conversiones\IConversor.cs" />
     <Compile Include="Conversiones\Impl\ConversorAutoMapper.cs" />
-    <Compile Include="Conversiones\Impl\Perfiles\TipoMappingProfile.cs" />
+    <Compile Include="Conversiones\Impl\Perfiles\TipoLineaMappingProfile.cs" />
+    <Compile Include="Conversiones\Impl\Perfiles\TipoProductoMappingProfile.cs" />
     <Compile Include="Conversiones\Impl\Perfiles\LineaMappingProfile.cs" />
     <Compile Include="Conversiones\Impl\Perfiles\ProductoMappingProfile.cs" />
     <Compile Include="Impl\ServicioComandos.cs" />

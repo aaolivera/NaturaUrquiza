@@ -15,8 +15,8 @@ namespace Servicios.Conversiones.Impl.Perfiles
             Mapper.CreateMap<Producto, ProductoDto>()
                 .ForMember(x => x.Linea,y =>y.MapFrom(x => x.Linea.Nombre))
                 .ForMember(x => x.LineaId, y => y.MapFrom(x => x.Linea.Id))
-                .ForMember(x => x.Tipo, y => y.MapFrom(x => x.Tipo.Nombre))
-                .ForMember(x => x.TipoId, y => y.MapFrom(x => x.Tipo.Id));
+                .ForMember(x => x.TipoProducto, y => y.MapFrom(x => x.TipoProducto.Nombre))
+                .ForMember(x => x.TipoProductoId, y => y.MapFrom(x => x.TipoProducto.Id));
             Mapper.CreateMap<ProductoDto, Producto>();
         }
     }

@@ -15,7 +15,7 @@ namespace Servicios
         List<UsuarioDto> ListarUsuarios();
 
         [OperationContract]
-        ListaPaginada<ProductoDto> ListarProductos(string filtro, Paginacion paginacion);
+        ListaPaginada<ProductoDto> ListarProductos(string filtro, int lineaId, Paginacion paginacion);
 
         [OperationContract]
         ProductoDto ObtenerProducto(int id);
@@ -24,6 +24,9 @@ namespace Servicios
         List<LineaDto> ListarLineas();
 
         [OperationContract]
-        List<TipoDto> ListarTipos();
+        List<TipoLineaDto> ListarTiposDeLineas();
+
+        [OperationContract]
+        List<TipoProductoDto> ListarTipos();
     }
 }

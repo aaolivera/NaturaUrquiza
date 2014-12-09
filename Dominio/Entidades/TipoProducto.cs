@@ -3,7 +3,7 @@ using Dominio.Enum;
 
 namespace Dominio.Entidades
 {
-    public class Tipo : IIdentificable
+    public class TipoProducto : IIdentificable
     {
         [Key]
         public virtual int Id { get; set; }

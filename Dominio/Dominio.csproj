@@ -52,12 +52,14 @@
     <Compile Include="Consultas\ListaPaginada.cs" />
     <Compile Include="Consultas\Paginacion.cs" />
     <Compile Include="Dto\CompraDto.cs" />
-    <Compile Include="Dto\TipoDto.cs" />
+    <Compile Include="Dto\TipoLineaDto.cs" />
+    <Compile Include="Dto\TipoProductoDto.cs" />
     <Compile Include="Dto\LineaDto.cs" />
     <Compile Include="Dto\ProductoDto.cs" />
     <Compile Include="Dto\UsuarioDto.cs" />
+    <Compile Include="Entidades\TipoLinea.cs" />
     <Compile Include="Entidades\Linea.cs" />
-    <Compile Include="Entidades\Tipo.cs" />
+    <Compile Include="Entidades\TipoProducto.cs" />
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Enum\TipoAlerta.cs" />

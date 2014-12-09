@@ -70,7 +70,7 @@
         </style> 
         @RenderSection("scripts", required: false)
     </head>
-    <body>
+    <body style="border: 0">
         @Html.Action("Menu", "Menu")
         <div class="container">
             <div id="alertaError" data-mensaje="@Textos.Error_Generico" class="alert alert-danger fade hide  alerta-box">

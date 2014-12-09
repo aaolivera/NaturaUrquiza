@@ -12,7 +12,9 @@ namespace Servicios.Conversiones.Impl.Perfiles
         }
         protected override void Configure()
         {
-            Mapper.CreateMap<Linea, LineaDto>();
+            Mapper.CreateMap<Linea, LineaDto>()
+                .ForMember(x => x.TipoLinea, y => y.MapFrom(x => x.TipoLinea.Nombre))
+                .ForMember(x => x.TipoLineaId, y => y.MapFrom(x => x.TipoLinea.Id));
             Mapper.CreateMap<LineaDto, Linea>();
         }
     }

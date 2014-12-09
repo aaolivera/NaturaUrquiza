@@ -430,7 +430,7 @@ namespace Dominio.Recursos {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tipo.
+        ///   Looks up a localized string similar to TipoProducto.
         /// </summary>
         public static string Tipo {
             get {

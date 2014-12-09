@@ -20,7 +20,7 @@ namespace NaturaUrquiza.Helpers
                     htmlstring += "<div class='row'>";
                 }
 
-                htmlstring += @"<div class='col-lg-4'>
+                htmlstring += @"<div class='col-sm-4'>
                                   <p class='text-center'><a class='ajax-ver-imagen-link' href='" + Path.Combine("images/profile", entidad.FotoPath ?? "") + "'><img class='img-circle' src='" + Path.Combine("images/profile", entidad.FotoPath ?? "") + @"' alt='Imagen genérica para marcar el lugar' style='width: 140px; height: 140px;'></a></p>
                                   <h3><p class='text-center'><os-p>" + entidad.Nombre + @"</os-p></h3></p>"
                                   + (entidad.PrecioPromocional.HasValue ? "<h6 class='text-center'><s><os-p>$" + entidad.Precio + @"</os-p></s></h6>" + "<p class='text-center'><os-p>$" + entidad.PrecioPromocional + @"</os-p></p>" : "<p class='text-center'><os-p>$" + entidad.Precio + @"</os-p></p>") + @"</p>

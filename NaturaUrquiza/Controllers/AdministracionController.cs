@@ -42,7 +42,7 @@ namespace NaturaUrquiza.Controllers
         {
             var paginacion = new Paginacion(ordenarPor, dirOrden, pagina, 10);
 
-            ViewBag.Items = servicio.ListarProductos(filtro,paginacion);
+            ViewBag.Items = servicio.ListarProductos(filtro,0,paginacion);
         }
 
         public ActionResult Crear()

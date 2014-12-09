@@ -43,10 +43,10 @@ namespace Dominio.Dto
         public int LineaId { get; set; }
 
         [Display(ResourceType = typeof(Textos), Name = "Tipo")]
-        public string Tipo { get; set; }
+        public string TipoProducto { get; set; }
 
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]
-        public int TipoId { get; set; }
+        public int TipoProductoId { get; set; }
 
         [Display(ResourceType = typeof(Textos), Name = "Prioridad")]
         [Required(ErrorMessageResourceType = typeof(Textos), ErrorMessageResourceName = "Error_Requerido")]

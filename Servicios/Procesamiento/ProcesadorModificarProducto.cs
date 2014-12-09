@@ -21,9 +21,9 @@ namespace Servicios.Procesamiento
             {
                 producto.Linea = Repositorio.Obtener<Linea>(comando.Dto.LineaId);
             }
-            if (comando.Dto.TipoId != 0 && (producto.Tipo == null || producto.Tipo.Id != comando.Dto.TipoId))
+            if (comando.Dto.TipoProductoId != 0 && (producto.TipoProducto == null || producto.TipoProducto.Id != comando.Dto.TipoProductoId))
             {
-                producto.Tipo = Repositorio.Obtener<Tipo>(comando.Dto.TipoId);
+                producto.TipoProducto = Repositorio.Obtener<TipoProducto>(comando.Dto.TipoProductoId);
             }
         }
 

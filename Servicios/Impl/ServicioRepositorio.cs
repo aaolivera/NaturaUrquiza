@@ -31,9 +31,9 @@ namespace Servicios.Impl
             return Listar<Usuario, UsuarioDto>().ToList();
         }
 
-        public ListaPaginada<ProductoDto> ListarProductos(string filtro, Paginacion paginacion)
+        public ListaPaginada<ProductoDto> ListarProductos(string filtro, int lineaId, Paginacion paginacion)
         {
-            return Listar<Producto, ProductoDto>(x => x.Nombre.Contains(filtro), paginacion);
+            return Listar<Producto, ProductoDto>(x => x.Nombre.Contains(filtro) && (lineaId == 0 || x.Linea.Id == lineaId), paginacion);
         }
 
         public ProductoDto ObtenerProducto(int id)
@@ -47,9 +47,14 @@ namespace Servicios.Impl
             return Listar<Linea, LineaDto>().ToList();
         }
 
-        public List<TipoDto> ListarTipos()
+        public List<TipoLineaDto> ListarTiposDeLineas()
         {
-            return Listar<Tipo, TipoDto>().ToList();
+            return Listar<TipoLinea, TipoLineaDto>().ToList();
+        }
+
+        public List<TipoProductoDto> ListarTipos()
+        {
+            return Listar<TipoProducto, TipoProductoDto>().ToList();
         }
 
 
